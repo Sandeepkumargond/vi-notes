@@ -1,0 +1,21 @@
+{
+  "name": "vi-notes",
+  "version": "1.0.0",
+  "description": "Authenticity verification platform for human writing",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "backend:dev": "npm run dev -w backend",
+    "backend:build": "npm run build -w backend",
+    "frontend:dev": "npm run dev -w frontend",
+    "frontend:build": "npm run build -w frontend"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
